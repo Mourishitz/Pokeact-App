@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Pokeact
+###### Tempo aproximado de leitura: 2 minutos *_(não custa nada vai)_*
+## _Front-end React.TS app_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicativo em React que consome uma [RESTful API pública](https://pokeapi.co) que oferece mais de 1000 pokemons diferentes como resultado de consultas HTTP.
+Esse projeto tem a intenção de:
+- Apresentar uma estrutura de pastas organizada com React.TS
+- Aprimorar conhecimentos do React (tais como useState e useEffect)
+- ✨Se tornar um mestre Pokémon!!!✨
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Consultar Pokémons como uma Pokedex (digitando números)
+- Poder escolher os pokémons em uma lista com imagens e cores
+- Consultar itens e lugares dos jogos e animes de Pokémon
+- Coletar Easter PokeEggs para se tornar o melhor e ganhar uma insígnia exclusiva
+- Export documents as Markdown, HTML and PDF
 
-### `npm start`
+## 🥚 Easter PokeEggs 🥚
+>  Que??? O que é isso?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Como um bom dev e gamer, dei a mim mesmo a liberdade de espalhar referências no projeto, de todos os generos de todos os tipos em qualquer lugar! Será que você é bom o suficiente para achar todos?? Garanto que se você analisar os meus códigos irá encontrar alguns espalhados, mas para explicar melhor irei te dar um agora mesmo! Os eggs serão exibidos em forma de [Links](https://mcgen.herokuapp.com/a.php?i=19&h=Como+um+bom+leitor&t=Egg+%230+---+0b1c024f), acessando eles, você irá ganhar uma conquista inspirada em um jogo quadrado muito famoso! A conquista é em formato de banner e com ela vem o nome do Egg + um Hash, sim um hash, uma criptografia em ADLER32, ao possuir todas as Hashs de todos os Eggs, você irá receber uma ínsignia exclusiva do projeto, que poderá ser exibida em qualquer lugar :)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Instalar na sua máquina
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Por ser um React app, é necessário [Node.js](https://nodejs.org/)
+As dependências podem ser adicionadas por NPM ou Yarn
 
-### `npm run build`
+```sh
+yarn
+yarn start
+yarn test
+yarn build
+yarn eject
+```
+ou
+```sh
+npm start
+npm test
+npm run build
+npm run eject
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Licenciatura
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MIT
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Open Source é vida!!!!**
