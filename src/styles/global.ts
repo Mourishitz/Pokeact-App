@@ -2,17 +2,17 @@ import colors from "./colors"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
-	html, body {npm i --save-dev @types/styled-components
+	html, body {
 		margin: 0;
 		padding: 0;
 		padding-bottom: 0;
 		height: 100%;
 		overflow-x: hidden;
-		color: ${colors.PenguinBlack};
+		color: ${colors.BlackShades};
 	}
 
 	body {
-		background-color: ${colors.IceWhite};
+		background-color: ${colors.TintWhite};
 	}
 
 	body, textarea, button{
@@ -30,9 +30,9 @@ const GlobalStyles = createGlobalStyle`
 		width: 100%;
 		height: 30px;
 		padding-left: 10px;
-		background-color: ${colors.IceWhite};
-		border: 2px solid ${colors.OceanLightBlue};
-		border-bottom: 2px solid ${colors.OceanLightBlue};
+		background-color: ${colors.TintWhite};
+		border: 2px solid ${colors.LightPurple};
+		border-bottom: 2px solid ${colors.LightPurple};
 	}
 
 	input:focus {
@@ -43,8 +43,8 @@ const GlobalStyles = createGlobalStyle`
 		cursor: pointer;
 		width: 100%;
 		height: 60px;
-		background-color: ${colors.OceanLightBlue};
-		color: ${colors.IceWhite};
+		background-color: ${colors.LightPurple};
+		color: ${colors.TintWhite};
 		border-radius: 50px;
 		padding: 5px 10px;
 		font-size: 16px;
@@ -52,8 +52,8 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	.btn:hover {
-		background-color: ${colors.OceanDarkBlue};
-		color: ${colors.IceWhite};
+		background-color: ${colors.DeepPurple};
+		color: ${colors.TintWhite};
 	}
 
 	.btn-link {
@@ -62,8 +62,8 @@ const GlobalStyles = createGlobalStyle`
 		height: 30px;
 		line-height: 30px;
 		margin: 10px 0;
-		background-color: ${colors.OceanDarkBlue};
-		color: ${colors.IceWhite};
+		background-color: ${colors.DeepPurple};
+		color: ${colors.TintWhite};
 		border: none;
 		border-radius: 50px;
 		padding: 10px 20px;
@@ -72,18 +72,18 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	.btn-link:hover {
-		background-color: ${colors.PenguinBlack};
-		color: ${colors.IceWhite};
+		background-color: ${colors.BlackShades};
+		color: ${colors.TintWhite};
 	}
 
 
 	a {
 		text-decoration: none;
-		color: ${colors.OceanLightBlue};
+		color: ${colors.LightPurple};
 	}
 
 	a:hover {
-		color: ${colors.OceanDarkBlue};
+		color: ${colors.DeepPurple};
 	}
 
 `
