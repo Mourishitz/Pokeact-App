@@ -1,9 +1,9 @@
-import Drawer from "../../components/Drawer";
+import Header from "../../components/Header"
 
 export default function Home(): JSX.Element {
     return (
-        <>
-            <Drawer />
+        <>  
+            <Header />
             <p>Um Pikachu Selvagem apareceu!</p>
         </>
     )

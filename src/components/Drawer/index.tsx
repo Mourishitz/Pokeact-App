@@ -8,6 +8,7 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
+import { Link } from 'react-router-dom'
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right'
 
@@ -45,6 +46,7 @@ export default function ToggleDrawer(){
     >
       <List>
         {['Pokedex', 'PokeSearch', 'PokeItems', 'PokePlaces'].map((text, index) => (
+          <Link to={`/${text.toLowerCase()}`}>
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={()=>{console.log(index)}}>
               <ListItemIcon>
@@ -53,6 +55,7 @@ export default function ToggleDrawer(){
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
@@ -61,7 +64,7 @@ export default function ToggleDrawer(){
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => {console.log(index)}}>
               <ListItemIcon>
-                <img src={masterBall} alt="pokeMasterIcon" width="30" height="30"/> 
+                <img src={masterBall} alt="pokeMasterIcon" width="30" height="30"/>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
