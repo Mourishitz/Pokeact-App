@@ -1,4 +1,9 @@
+import Core from "../Core"
+
 export default function PokePlacecs(): JSX.Element{
-    return (<>Poke Lugares conhecidos</>
+    return (
+    <Core>
+    <p>Poke Lugares conhecidos</p>
+    </Core>
     )
 }

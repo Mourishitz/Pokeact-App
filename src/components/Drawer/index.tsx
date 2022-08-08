@@ -9,6 +9,8 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import { Link } from 'react-router-dom'
+import {TbPokeball} from 'react-icons/tb'
+
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right'
 
@@ -36,7 +38,7 @@ export default function ToggleDrawer(){
 
       setState({ ...state, [anchor]: open })
     }
-
+  
   const list = (anchor: Anchor) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
@@ -45,10 +47,10 @@ export default function ToggleDrawer(){
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Pokedex', 'PokeSearch', 'PokeItems', 'PokePlaces'].map((text, index) => (
+        {['Home', 'Pokedex', 'PokeSearch', 'PokeItems', 'PokePlaces'].map((text, index) => (
           <Link to={`/${text.toLowerCase()}`}>
           <ListItem key={text} disablePadding>
-            <ListItemButton onClick={()=>{console.log(index)}}>
+            <ListItemButton>
               <ListItemIcon>
                 <img src={pokeBall} alt="pokeIcon" width="30" height="30"/> 
               </ListItemIcon>
@@ -60,9 +62,9 @@ export default function ToggleDrawer(){
       </List>
       <Divider />
       <List>
-        {['Contact PokeDev', 'Easter PokeEggs'].map((text,  index) => (
+        {['Contact PokeDev', 'Easter PokeEggs'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton onClick={() => {console.log(index)}}>
+            <ListItemButton>
               <ListItemIcon>
                 <img src={masterBall} alt="pokeMasterIcon" width="30" height="30"/>
               </ListItemIcon>
@@ -78,7 +80,7 @@ export default function ToggleDrawer(){
     <div>
       {(['left'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button hidden={false} onClick={toggleDrawer(anchor, true)}>Side Bar</Button>
+          <Button hidden={false} onClick={toggleDrawer(anchor, true)}><TbPokeball className='headerIcon' /></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

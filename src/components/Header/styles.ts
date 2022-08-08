@@ -4,7 +4,6 @@ import colors from "../../styles/colors"
 export const HeaderStyle = styled.div`
 	overflow: hidden;
 	background-color: ${colors.BlackShades};
-	padding: 10px;
 	position: fixed;
 	width: 100%;
 	top: 0;

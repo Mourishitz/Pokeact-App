@@ -86,6 +86,26 @@ const GlobalStyles = createGlobalStyle`
 		color: ${colors.DeepPurple};
 	}
 
+	.pl-9 {
+		padding-left: 90px;
+	}
+	
+	.mr-2 {
+		margin-right: 20px;
+	}
+
+	.headerIcon{
+		height: 32px;
+		width: 32px;
+		padding: 10px;
+		border-radius: 1em;
+		color: ${colors.DesaturatedPink};
+	}
+
+	.headerIcon:hover {
+		color: ${colors.DeepPurple};
+		background-color: ${colors.LightPurple};
+	}
 `
 
 export default GlobalStyles

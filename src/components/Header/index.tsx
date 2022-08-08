@@ -1,12 +1,11 @@
-import { HeaderStyle } from './styles'
-import { Link, } from "react-router-dom"
 import ToggleDrawer from '../Drawer'
+import { HeaderStyle } from './styles'
 
 export default function Header(): JSX.Element {
 
 	return (
 		<HeaderStyle>
-			<Link to={`/`} className='link logo'><ToggleDrawer /></Link>
+			<ToggleDrawer />
 		</HeaderStyle>
 	)
 }

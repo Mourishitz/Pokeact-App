@@ -1,10 +1,10 @@
 import Header from "../../components/Header"
+import Core from "../Core"
 
 export default function Home(): JSX.Element {
     return (
-        <>  
-            <Header />
+        <Core>
             <p>Um Pikachu Selvagem apareceu!</p>
-        </>
+        </Core>
     )
 }

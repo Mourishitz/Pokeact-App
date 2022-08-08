@@ -1,7 +1,6 @@
 const colors = {
     "DeepPurple": "#26092A",
     "LightPurple": "#6E5574",
-    "SaturatedRed": "#06AED5",
     "DesaturatedPink": "#903139",
     "AquaGreen": "#00444A",
     "TintWhite": "#F9F4ED",
