@@ -25,7 +25,7 @@ export default function ToggleDrawer(){
     right: false,
   })
 
-  const toggleDrawer =
+  const toggleDrawer = 
     (anchor: Anchor, open: boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
