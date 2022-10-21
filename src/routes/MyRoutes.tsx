@@ -1,6 +1,8 @@
 import Home from '../pages/Home'
+import PokeDev from "../pages/PokeDev"
 import PokeItems from '../pages/PokeItems'
 import PokePlaces from '../pages/PokePlaces'
+import EasterEggs from "../pages/EasterEggs";
 import Pokedex from '../pages/Pokemon/Pokedex'
 import PokeData from '../pages/Pokemon/PokeData'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
@@ -18,10 +20,12 @@ export default function MyRoutes(): JSX.Element {
         {/* Outro Egg, caramba você tá ficando bom mesmo!!  */}
         {/* Egg: Forçando a Barra (Tentou acessar manualmente a rota '/') */}
         <Route path='/home' element={<Home />}/>
+        <Route path='/pokedev' element={<PokeDev />}/>
         <Route path='/pokedex' element={<Pokedex />} />
         <Route path='/pokesearch' element={<PokeData />} />
-        <Route path='/pokeitems' element={<PokeItems />}/>
+        <Route path='/pokeitems' element={<PokeItems />} />
         <Route path='/pokeplaces' element={<PokePlaces />}/>
+        <Route path='/eastereggs' element={<EasterEggs />} />
       </Routes>
     </BrowserRouter>
   )
