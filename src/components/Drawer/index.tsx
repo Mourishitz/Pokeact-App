@@ -47,7 +47,7 @@ export default function ToggleDrawer(){
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Pokedex', 'PokeSearch', 'PokeItems', 'PokePlaces'].map((text, index) => (
+        {['Home', 'Pokedex', 'PokeSearch', 'PokeItems', 'PokePlaces'].map((text) => (
           <Link to={`/${text.toLowerCase()}`}>
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -62,7 +62,8 @@ export default function ToggleDrawer(){
       </List>
       <Divider />
       <List>
-        {['Contact PokeDev', 'Easter PokeEggs'].map((text, index) => (
+        {['PokeDev', 'EasterEggs'].map((text) => (
+          <Link to={`/${text.toLowerCase()}`}>
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -71,6 +72,7 @@ export default function ToggleDrawer(){
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
