@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import ToggleDrawer from "../../components/Drawer";
+import React from "react"
 import Header from "../../components/Header"
 
 type CoreProps = {
@@ -10,8 +9,7 @@ export default function Core({children}: CoreProps): JSX.Element {
 	return (
 		<div>
 			<Header />
-			{/* <ToggleDrawer /> */}
-			<div className="pl-9 mr-2">
+			<div className="coreChildren">
 				{children}
 			</div>
 		</div>

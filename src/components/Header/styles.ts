@@ -3,6 +3,7 @@ import colors from "../../styles/colors"
 
 export const HeaderStyle = styled.div`
 	overflow: hidden;
+    z-index: 1;
 	background-color: ${colors.BlackShades};
 	position: fixed;
 	width: 100%;

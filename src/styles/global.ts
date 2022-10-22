@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
 	html, body {
 		margin: 0;
 		padding: 0;
-		padding-bottom: 0;
 		height: 100%;
 		overflow-x: hidden;
 		color: ${colors.BlackShades};
@@ -89,11 +88,25 @@ const GlobalStyles = createGlobalStyle`
 	.pl-9 {
 		padding-left: 90px;
 	}
-	
+
+    .ml-2{
+      margin-left: 20px;
+    }
+    
 	.mr-2 {
 		margin-right: 20px;
 	}
-
+    
+    .coreChildren{
+      margin-top: 84px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    
+    .cardDisplay{
+      padding: 10px;
+    }
+    
 	.headerIcon{
 		height: 32px;
 		width: 32px;
@@ -106,6 +119,10 @@ const GlobalStyles = createGlobalStyle`
 		color: ${colors.DeepPurple};
 		background-color: ${colors.LightPurple};
 	}
+    
+    .debug{
+      border: 2px solid red !important;
+    }
 `
 
 export default GlobalStyles
