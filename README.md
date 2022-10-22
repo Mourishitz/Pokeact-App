@@ -8,6 +8,11 @@ Esse projeto tem a intenção de:
 - Aprimorar conhecimentos do React (tais como useState e useEffect)
 - ✨Se tornar um mestre Pokémon!!!✨
 
+## Acesse aqui!
+Servidor: Firebase
+
+Url: [https://pokeact-5abe5.web.app/home](https://pokeact-5abe5.web.app/home)
+
 ## Features
 
 - Consultar Pokémons como uma Pokedex (digitando números)
