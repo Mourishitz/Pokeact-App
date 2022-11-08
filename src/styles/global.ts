@@ -119,6 +119,40 @@ const GlobalStyles = createGlobalStyle`
 		color: ${colors.DeepPurple};
 		background-color: ${colors.LightPurple};
 	}
+
+    .outlineHover{
+      position: relative;
+    }
+
+    .outlineHover::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      border-radius: 4px;
+      background-color: ${colors.DeepPurple};
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+
+    .outlineHover:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    
+    .hability{
+      margin-top: -15px;
+      color: ${colors.DeepPurple};
+      font-size: 0.8rem;
+    }
+    
+    .center{
+      display: flex;
+      justify-content: center;
+    }
     
     .debug{
       border: 2px solid red !important;

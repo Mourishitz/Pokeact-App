@@ -115,14 +115,24 @@ export default function PokemonCard({name, image, types, id}: PokeCardProps){
                             open={open}
                         >
                             <BootstrapDialogTitle id="customized-dialog-title" onClose={()=>{setOpen(false)}}>
-                                {pokeData.data.name}
+                                <div className={"center"}>
+                                    {pokeData.data.name}
+                                </div>
                             </BootstrapDialogTitle>
+                            <DialogContent className={"center"}>
+                                <img src={pokeData.data.sprites.front_default} alt={pokeData.data.name} height={200}/>
+                            </DialogContent>
                             <DialogContent dividers>
-                                {JSON.stringify(pokeData)}
+                                <p>Id: {pokeData.data.id}</p>
+                                <p>Nome: {pokeData.data.name}</p>
+                                <div>
+                                    <p>Habilidades: {pokeData.data.moves.length}</p>
+                                    <p className="outlineHover hability" onClick={()=>{console.log('moves')}}>Clique aqui para ver a lista completa de habilidades</p>
+                                </div>
                             </DialogContent>
                             <DialogActions>
                                 <Button autoFocus onClick={() => {setOpen(false)}}>
-                                    Save changes
+                                    Saiba mais
                                 </Button>
                             </DialogActions>
                         </BootstrapDialog>
@@ -132,9 +142,6 @@ export default function PokemonCard({name, image, types, id}: PokeCardProps){
                     </>
 
             }
-
-
-
         </PokemonCardStyles>
     );
 }
