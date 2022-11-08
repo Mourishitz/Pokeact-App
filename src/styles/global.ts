@@ -145,6 +145,7 @@ const GlobalStyles = createGlobalStyle`
     
     .hability{
       margin-top: -15px;
+      cursor: pointer;
       color: ${colors.DeepPurple};
       font-size: 0.8rem;
     }
